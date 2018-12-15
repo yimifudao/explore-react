@@ -1,0 +1,13 @@
+{
+  "presets":[
+    [
+      "@babel/preset-env",{/** options */}
+    ],
+    [
+      "@babel/preset-react",{/** options */}
+    ]
+  ],
+  "plugins": [
+    ["import", { "libraryName": "antd", "style": true }]
+  ]
+}
