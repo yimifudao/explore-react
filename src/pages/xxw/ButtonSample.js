@@ -10,6 +10,8 @@ import {Button} from 'antd';
  * 3. loading 属性有2中设置，一种是 true/false  二种是 对象，可以设置延时时间
  * 4. 给button添加点击事件和非点击事件的时候，鼠标hover时候的表现是不一样的
  */
+import ComLifecycle from './ComLifecycle';
+
 class ButtonSample extends React.Component {
   constructor(props){
     super(props);
@@ -39,6 +41,7 @@ class ButtonSample extends React.Component {
         
         <p>loading 按钮</p>
         <Button loading={this.state.loading} type="danger">加载中...</Button>
+        <ComLifecycle />
       </div>
     )
   }
