@@ -7,6 +7,11 @@ import { Switch, Route,Redirect} from "react-router-dom";
 import HomePages from './xxw/HomePage';
 import ButtonSample from './xxw/ButtonSample';
 
+/**
+ * 编程模式
+ */
+import Controller from './xxw/pattern/Controller'
+import UnController from './xxw/pattern/UnController'
 class XxwRoutes extends React.Component {
 
   render(){
@@ -14,6 +19,8 @@ class XxwRoutes extends React.Component {
       <Switch>
         <Route path="/xxw/home" component={HomePages} /> 
         <Route path="/xxw/button" component={ButtonSample} /> 
+        <Route path="/xxw/controller" component={Controller} /> 
+        <Route path="/xxw/uncontroller" component={UnController} /> 
         <Redirect from="/xxw" to="/xxw/home" />
       </Switch>
     )

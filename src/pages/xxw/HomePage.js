@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import {Button} from 'antd';
 class HomePage extends React.Component {
 
   render(){
     return(
       <div className="homepage">
-        <Link to="/xxw/button"> button 组件</Link>
+      <ul>
+        <h4>react开发模式，controller VS uncontroller</h4>
+        <li>
+          <Link to="/xxw/controller">1.controller</Link>
+        </li>
+        <li>
+          <Link to="/xxw/uncontroller">2.uncontroller</Link>
+        </li>
+      </ul>
       </div>
     )
   }
