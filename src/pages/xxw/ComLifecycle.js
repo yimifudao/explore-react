@@ -6,6 +6,8 @@ import React from 'react';
 
 import EmailInput from './com/EmailInput';
 
+import InitState from './com/InitState'
+
 const UserList = [
   {
     email:'xxx@123.com'
@@ -20,6 +22,7 @@ class ComLifecycle extends React.Component {
     super(props);
     this.state = {
       name:'1232',
+      nameKey:Date.now(),
       user:{
         email:'xxx@123.com',
         id:123
@@ -55,6 +58,12 @@ class ComLifecycle extends React.Component {
     }
     
   }
+  changeName = ()=>{
+    this.setState({
+      name:'hello',
+      nameKey:Date.now()
+    })
+  }
   // static getDerivedStateFromProps(props, state){
   //   console.log(props)
   //   console.log(state)
@@ -74,6 +83,11 @@ class ComLifecycle extends React.Component {
         {
           this.renderEmailInput()
         }
+        <div>
+          <h4>练习如何使用默认值</h4>
+          <button onClick={this.changeName}>change name</button>
+          <InitState defaultName={this.state.name} key={this.state.nameKey}/>
+        </div>
       </div>
     )
   }
