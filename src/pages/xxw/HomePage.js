@@ -14,6 +14,9 @@ class HomePage extends React.Component {
         <li>
           <Link to="/xxw/uncontroller">2.uncontroller</Link>
         </li>
+        <li>
+          <Link to="/xxw/refs">3.refs</Link>
+        </li>
       </ul>
       </div>
     )

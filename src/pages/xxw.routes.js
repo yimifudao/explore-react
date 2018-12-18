@@ -6,7 +6,7 @@ import { Switch, Route,Redirect} from "react-router-dom";
  */
 import HomePages from './xxw/HomePage';
 import ButtonSample from './xxw/ButtonSample';
-
+import RefsPage from './xxw/RefsPage';
 /**
  * 编程模式
  */
@@ -21,6 +21,7 @@ class XxwRoutes extends React.Component {
         <Route path="/xxw/button" component={ButtonSample} /> 
         <Route path="/xxw/controller" component={Controller} /> 
         <Route path="/xxw/uncontroller" component={UnController} /> 
+        <Route path="/xxw/refs" component={RefsPage} /> 
         <Redirect from="/xxw" to="/xxw/home" />
       </Switch>
     )
