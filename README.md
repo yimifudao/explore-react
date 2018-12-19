@@ -46,4 +46,5 @@ clickA(){
 ### 思考-react使用规范
 
 
-[React组件创建的4中方式](./doc/comb.md)
+### 文章
+1. [React组件创建的4中方式](./doc/comb.md)
