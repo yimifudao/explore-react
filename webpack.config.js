@@ -4,7 +4,6 @@ const fontRule = require('./webpack/font-rule');
 const imgRule = require('./webpack/img-rule');
 const theme = require("./package.json").theme;
 module.exports = {
-
   resolve: {
     modules: ['node_modules', path.join(__dirname, '../node_modules')],
     extensions: ['.web.tsx', '.web.ts', '.web.jsx', '.web.js', '.ts', '.tsx', '.js', '.jsx', '.json'],
