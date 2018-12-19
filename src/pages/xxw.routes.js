@@ -7,6 +7,7 @@ import { Switch, Route,Redirect} from "react-router-dom";
 import HomePages from './xxw/HomePage';
 import ButtonSample from './xxw/ButtonSample';
 import RefsPage from './xxw/RefsPage';
+import CreateReactComb from './xxw/CreateReactComb';
 /**
  * 编程模式
  */
@@ -22,6 +23,7 @@ class XxwRoutes extends React.Component {
         <Route path="/xxw/controller" component={Controller} /> 
         <Route path="/xxw/uncontroller" component={UnController} /> 
         <Route path="/xxw/refs" component={RefsPage} /> 
+        <Route path="/xxw/comb" component={CreateReactComb} /> 
         <Redirect from="/xxw" to="/xxw/home" />
       </Switch>
     )

@@ -17,6 +17,9 @@ class HomePage extends React.Component {
         <li>
           <Link to="/xxw/refs">3.refs</Link>
         </li>
+        <li>
+          <Link to="/xxw/comb">4.组件创建</Link>
+        </li>
       </ul>
       </div>
     )
