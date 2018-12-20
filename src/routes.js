@@ -1,7 +1,7 @@
 import React,{Suspense,lazy} from 'react';
 import { HashRouter as Router,Switch, Route, Redirect } from "react-router-dom";
 
-const XxwRoutes = lazy(()=>import('./pages/xxw.routes'))
+// const XxwRoutes = lazy(()=>import('./pages/xxw.routes'))
 const LazyError = lazy(()=>import('./pages/xxw/LazyError'))
 class AppRoutes extends React.Component {
 
